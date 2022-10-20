@@ -1,17 +1,30 @@
 .flex-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     max-width: 1400px;
     width: 100%;
     min-height: 100%;
 }
 
+header {
+    max-width: 100%
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .head {
     max-width: 90px;
     width: 100%;
     min-height: 36px;
-    justify-content: space-around;
     font-family: 'aldrich', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -25,21 +38,23 @@ a {
     color: black;
 }
 
-li {
+ nav ul {
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    list-style: none;
+    justify-content: space-evenly;
     max-width: 267px;
     width: 100%;
     min-height: 25px;
 }
 
-.nav-text {
-     /* max-width: 267px;*/
-    max-width: 42px;
-    width: 100%;
-    min-height: 23px;
+li {
+   list-style: none;
+    
+}
+
+
+
+.nav-text { 
+    
     justify-content: right;
     font-family: 'source sans pro', sans-serif;
     font-style: normal;
@@ -49,8 +64,16 @@ li {
     color: #242635;
 } 
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 573px;
+    text-align: center;
+}
+
 .main-title {
-    max-width: 455px;
+    
     width: 100%;
     min-height: 102px;
     font-family: 'poppins', sans-serif;
@@ -65,7 +88,7 @@ li {
 }
 
 .main-info {
-    max-width: 573px;
+    
     width: 100%;
     min-height: 66px;
     font-family: 'source sans pro', sans-serif;
@@ -81,6 +104,101 @@ li {
     display: inline-block;
     max-width:864px;
     width: 100%;
-    min-height: 486px;
+}
+
+img {
+    max-width: 100%
+}
+
+@media screen and (max-width: 768px) { /*do i need to change/add nav?*/
+   .head {
+    max-width: 90px;
+    width: 100%;
+    min-height: 36px;
+    font-family: 'baloo thambi 2', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #242635;
+   }
    
+    .main-title {
+    max-width: 364px;
+    width: 100%;
+    min-height: 83px;
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 82.8px;
+    letter-spacing: -1.6px;
+    text-align: center;
+    justify-content: center;
+    color: #242635;
+    }
+
+   .main-info {
+    max-width: 573.5px;
+    width: 100%;
+    min-height: 66px;
+    width: 100%;
+    min-height: 66px;
+    font-family: 'source sans pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #242635;
+    }
+    .img_horses {
+     max-width: 617px;
+     width: 100%; 
+     min-height: 512px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  .head {
+    max-width: 90px;
+    width: 100%;
+    min-height: 36px;
+    font-family: 'baloo thambi 2', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #242635;
+ }
+
+ .nav-text{
+   display: none;
+ }
+ .main-title {
+    max-width: 182px;
+    width: 100%;
+    min-height: 40px;
+    font-size: 36px;
+    line-height: 39.6px;
+}
+ 
+.main-info {
+    max-width: 217px;
+    width: 100%;
+    min-height: 49px;
+    font-family: 'source sans pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #242635;
+}
+
+.img_horses {
+    max-width: 256px;
+    width: 100%;
+    min-height: 284px;
+ }
 }

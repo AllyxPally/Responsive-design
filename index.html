@@ -4,34 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Responsive Design</title>
 </head>
 <body>
-    
+    <div class="flex-container">
+
+
     <header>
-        <div class="flex-container">
-          <p class="head">Head.</p>
-      <nav>
-        
+    
+          
+      <nav class="navigation">
+        <p class="head">Head.</p>
             <ul>
                 <li><a class="nav-text" href="#">Works</a></li>
                 <li><a class="nav-text" href="#">Services</a></li>
                 <li><a class="nav-text" href="#">Contacts</a></li>
             </ul>
-      </nav>
-        </div>
-      <div>
+       </nav>
+    <div class="info-container">
+        <div class="main">
              <h1 class="main-title">Patagonia</h1>
              <h3 class="main-info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</h3>
-      </div>
-       
-
+        </div>
              <div class="img_horses">
-             <img src="images/Horses.jpg" alt="horses">
-             </div>
+               <picture>
+                <source class="info-container" media="(min-width: 1400px)" srcset="images/Horses.jpg">
+                <source class="info-container" media="(max-width: 786px)" srcset="images/Horses.jpg">
+                <source class="info-container" media="(max-width: 320px)" srcset="images/Horses.jpg">
+            <img src="images/Horses.jpg" alt="horses">
+               </picture>
+                
+        </div>
+    </div>
+        
     </header> 
+</div>
    
 
 </body>
