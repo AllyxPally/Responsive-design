@@ -128,11 +128,11 @@ img {
     color: #242635;
    }
  
-   .nav-text {
+   .navigation i {
   display: flex;
 }
   .fa-ellipse {
-   display: none;
+   visibility: hidden;
   } 
 
   .main-title {
@@ -164,7 +164,7 @@ img {
     text-align: center;
     color: #242635;
   }
-    .img_horses {
+    .img_horses786 {
      max-width: 617px;
      width: 100%; 
      min-height: 100%;
@@ -184,12 +184,13 @@ img {
     color: #242635;
  }
  
- .nav-text {
+  .nav-text {
    display: none;
  }
 
  .fa-ellipse {
    display: flex;
+   
  }
  .main-title {
     max-width: 182px;
@@ -212,10 +213,10 @@ img {
     color: #242635;
 }
 
-.img_horses { /*i can't get the image to look as the figma design*/
+.img_horses320 { 
     flex-direction: column;
     max-width: 256px;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
  }
 }
