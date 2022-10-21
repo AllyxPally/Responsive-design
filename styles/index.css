@@ -1,9 +1,10 @@
+
 .flex-container {
     display: flex;
     justify-content: center;
     max-width: 1400px;
     width: 100%;
-    min-height: 100%;
+    min-height: auto;
 }
 
 header {
@@ -50,8 +51,6 @@ li {
    list-style: none;
     
 }
-
-
 
 .nav-text { 
     
@@ -110,7 +109,13 @@ img {
     max-width: 100%
 }
 
-@media screen and (max-width: 768px) { /*do i need to change/add nav?*/
+@media screen and (max-width: 1400px) {
+    .fa-ellipse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
    .head {
     max-width: 90px;
     width: 100%;
@@ -122,8 +127,15 @@ img {
     letter-spacing: -0.25px;
     color: #242635;
    }
-   
-    .main-title {
+ 
+   .nav-text {
+  display: flex;
+}
+  .fa-ellipse {
+   display: none;
+  } 
+
+  .main-title {
     max-width: 364px;
     width: 100%;
     min-height: 83px;
@@ -151,14 +163,14 @@ img {
     line-height: 33px;
     text-align: center;
     color: #242635;
-    }
+  }
     .img_horses {
      max-width: 617px;
      width: 100%; 
-     min-height: 512px;
+     min-height: 100%;
     }
-}
 
+}
 @media screen and (max-width: 320px) {
   .head {
     max-width: 90px;
@@ -171,9 +183,13 @@ img {
     letter-spacing: -0.25px;
     color: #242635;
  }
-
- .nav-text{
+ 
+ .nav-text {
    display: none;
+ }
+
+ .fa-ellipse {
+   display: flex;
  }
  .main-title {
     max-width: 182px;
@@ -196,9 +212,10 @@ img {
     color: #242635;
 }
 
-.img_horses {
+.img_horses { /*i can't get the image to look as the figma design*/
+    flex-direction: column;
     max-width: 256px;
     width: 100%;
-    min-height: 284px;
+    min-height: auto;
  }
 }
