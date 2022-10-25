@@ -53,8 +53,7 @@ li {
     
 }
 
-.nav-text { /*The text was aligned correctly at first(more to the right), then it moved to it's current position. 
-    I have tried different things to fix the issue, but nothing of the things i tried worked. Why did that happen?*/
+.nav-text {
     
     justify-content: right;
     font-family: 'source sans pro', sans-serif;
@@ -64,6 +63,10 @@ li {
     line-height: 22px;
     color: #242635;
 } 
+
+.nav-text:hover {
+    background-color: blueviolet;
+}
 
 .main {
     display: flex;
