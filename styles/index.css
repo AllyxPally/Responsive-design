@@ -5,6 +5,7 @@
     max-width: 1400px;
     width: 100%;
     min-height: auto;
+    margin: auto;
 }
 
 header {
@@ -112,7 +113,8 @@ img {
 
 @media screen and (max-width: 1400px) { 
    .navigation i {
-    visibility: hidden;
+     display: none;
+     justify-content: space-between;
     
     }
    
@@ -132,11 +134,11 @@ img {
    }
  
    .nav-text {
-   visibility: visible;
+   display: flex;
    text-align: right;
 }
   .navigation i { 
-   visibility: hidden;
+   display: none;
   
   } 
 
@@ -191,11 +193,13 @@ img {
  }
  
   .nav-text  {
-   visibility: hidden;
+   display: none;
  }
+ 
 
  .navigation i { 
-   visibility: visible;
+  display: flex;
+  justify-content: space-between;
    
  }
    .main-title {
